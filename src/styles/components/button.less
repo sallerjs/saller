@@ -1,0 +1,59 @@
+/* 默认按钮样式 */
+.gButton( @bgColor: #f60, @color: #fff, @width: 94% ){
+    width: @width;
+    height: 38px;
+    line-height: 38px;
+    font-size: 17px;
+    margin: 18px auto 0;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #f60;
+    background-color: @bgColor;
+    color: @color;
+}
+
+/* 按钮可点击状态，如确认、完成、下一步按钮 */
+.clickBtn{
+    .gButton;
+}
+
+/* 按钮不可点击状态，如信息未填或验证未通过状态下按钮 */
+.noClickBtn{
+    .gButton( #c8c8c8 );
+    border: 1px solid #c8c8c8;
+}
+
+/* 返回按钮，如返回详情页 */
+.backBtn{
+    .gButton( #e6e6e6, #f60, 45% );
+    margin-left:3%;
+}
+/* 返回按钮，如返回详情页 */
+.continueBtn{
+    .gButton( #f60, #fff, 45% );
+    margin-right: 3%;
+}
+
+/* 发送短信验证码按钮 */
+.smsbtn( @bdColor: #f60, @color: #f60){
+    width: 35%;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: @color;
+    font-size: 12px;
+    border: 1px solid @bdColor;
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 3%;
+}
+.getSMS{
+    .smsbtn;
+}/* 点击获取验证码 */
+
+.disabledSMS{
+    .smsbtn( #e6e6e6, #a7a6a6);
+}/* 60秒后重发 */
+
+
