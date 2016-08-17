@@ -8,6 +8,10 @@ A Common JavaScript Solution
 
 basic version
 
+### 0.0.2 
+
+mock server 
+
 ## Next
 
-mock  ci  unit-test  isomorphic
+ci  unit-test  isomorphic
