@@ -12,7 +12,7 @@ module.exports = (option) => {
     cache: option.cache,
     entry: option.entry,
     output: {
-      path: option.output.path,
+      path: option.output.path, 
       filename: option.output.jsName,
       chunkFilename: option.output.chunkJsName,
       publicPath: option.output.publicPath

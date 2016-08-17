@@ -1,8 +1,8 @@
-#Raptors
+#Saller
 
 A Common JavaScript Solution
 
-## Changelog
+## Change Log
 
 ### 0.0.1
 

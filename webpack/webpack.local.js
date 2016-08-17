@@ -51,7 +51,6 @@ module.exports = (option) => {
         template: option.template.src
       }),
       new webpack.optimize.CommonsChunkPlugin(option.shared.jsName),
-      new ExtractTextPlugin(option.shared.cssName),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin(),
       new webpack.optimize.OccurenceOrderPlugin(),
