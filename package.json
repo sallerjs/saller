@@ -2,6 +2,7 @@
   "name": "saller",
   "main": "server.js",
   "repository": "git@github.com:sallerjs/saller.git",
+  "version": "0.0.2",
   "scripts": {
     "start": "better-npm-run start-dev",
     "api": "better-npm-run start-dev-api",
@@ -57,7 +58,6 @@
     "superagent": "^2.1.0",
     "superagent-jsonp": "^0.1.1"
   },
-  "version": "0.0.1",
   "description": "A Common JavaScript Solution",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
