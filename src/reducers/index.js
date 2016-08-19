@@ -1,10 +1,11 @@
-export account from './account'
-export addCard from './addCard'
-export card from './card'
-export cardPanel from './cardPanel'
-export helper from './helper'
-export order from './order'
-export password from './password'
-export payOrder from './payOrder'
-export tradPasswordPanel from './tradPasswordPanel'
-export verifyCard from './verifyCard'
+import { combineReducers } from 'redux';
+import { routeReducer } from 'redux-simple-router';
+import { items } from './items';
+
+const rootReducer = combineReducers({
+  routing: routeReducer,
+  /* your reducers */
+  items,
+});
+
+export default rootReducer;

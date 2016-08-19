@@ -1,19 +1,20 @@
-import React from 'react'
-import { render } from 'react-dom'
-import styles from 'styles/index.less'
-import createHistory from 'history/lib/createHashHistory'
-import configureStore from './store/configureStore'
-import Root from './containers/root'
-import { syncReduxAndRouter } from 'redux-simple-router'
+import React from 'react';
+import { render } from 'react-dom';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import { Provider } from 'react-redux';
+import { Router, Redirect } from 'react-router';
+import configureStore from './store/configureStore';
+import Root from './containers/root';
+import { syncReduxAndRouter } from 'redux-simple-router';
 
-const store = configureStore()
-const history = createHistory({
-  queryKey: false,
-})
+const store = configureStore();
+const history = createBrowserHistory({
+  queryKey: false
+});
 
-syncReduxAndRouter(history, store)
+syncReduxAndRouter(history, store);
 
 render(
-  <Root store={ store } history={ history } />,
+  <Root store={store} history={history} />,
   document.getElementById('root')
-)
+);
